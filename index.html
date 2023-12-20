@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Street Artists</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./landing_page.css" />
+    <link rel="stylesheet" href="./visit_home_page.css" />
+    <link rel="stylesheet" href="./visit_listing_page.css" />
+    <link rel="stylesheet" href="./filter_listing_form.css" />
+    <link rel="stylesheet" href="./artist_home_page.css" />
+    <link rel="stylesheet" href="./artist_items_page.css" />
+    <link rel="stylesheet" href="./auction_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/613109314b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Main first page starts from here - LANDING PAGE -->
+    <div class="main-section" id="land-page">
+      <div class="first-text">
+        <h1>Street Artists</h1>
+      </div>
+      <div class="logo-div">
+        <img src="./images/main-logo.png" alt="" id="main-logo" />
+      </div>
+      <div class="choose-visitor">
+        <div class="join-artist">
+          <h3>Join as Artist</h3>
+          <div class="select-artists">
+            <select id="choose-artist">
+              <option value="" disabled selected>Choose</option>
+            </select>
+          </div>
+        </div>
+        <div class="join-visitor">
+          <div class="visitor-text">
+            <h3>Join as Visitor</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second page starts from here - VISITOR HOME PAGE -->
+    <div class="nav-bar">
+      <div class="logo-visitor">
+        <img src="./images/main-logo.png" alt="" />
+      </div>
+      <div class="auction-icon">
+        <div class="logo-text">
+          <!-- HERE THE TEXT HAVE TO APPEND DYNAMICALLY THROUGH JAVASCRIPT,ON WHICH ARTIST YOU ARE CLICKING THAT NAME HAVE TO SHOW UP. -->
+          <h3>Street ARTists</h3>
+        </div>
+        <img src="./images/auction-logo.png" alt="" />
+      </div>
+    </div>
+    <div class="visitor-first-page" id="visitor-page">
+      <div class="first-section-visitor">
+        <div class="background-bricks">
+          <div class="main-title">
+            <h1>Looking for masterpiece?</h1>
+          </div>
+          <div class="btn-primary-visitor">
+            <button id="find-btn">Find one now!</button>
+          </div>
+        </div>
+      </div>
+      <div class="second-section-visitor">
+        <div class="carousel parent-Carousel">
+          <div class="rowZ row1"></div>
+          <div class="rowZ row2"></div>
+        </div>
+      </div>
+      <div class="third-section-visitor">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="3000">
+              <div class="left-side">
+                <img
+                  src="https://images.unsplash.com/photo-1521146764736-56c929d59c83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="img-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="carousel-text">
+                <p>Capture that image</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="4000">
+              <div class="left-side">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1682965455094-a913339699bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="img-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="carousel-text">
+                <p>Capture that image</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="left-side">
+                <img
+                  src="https://images.unsplash.com/photo-1569210954449-4e8dc4e022a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=747&q=80"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="img-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="carousel-text">
+                <p>Capture that image</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev btn-arrow"
+            type="button"
+            data-target="#carouselExampleInterval"
+            data-slide="prev"
+          >
+            <img src="./images/left-arrow.png" alt="" />
+            <span class="sr-only">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next btn-arrow"
+            type="button"
+            data-target="#carouselExampleInterval"
+            data-slide="next"
+          >
+            <img src="./images/right-arrow.png" alt="" />
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Visitor listing Page starts from here - VISITOR LISTING -->
+    <div class="filter-btn visitors-filter">
+      <img
+        src="./images/check-filter-btn.png"
+        id="filter-btn-artists"
+        alt=""
+      />
+    </div>
+    <div class="visitor-listing-section" id="visit-list-section"></div>
+    <div class="filter-form">
+      <h3>Filter by</h3>
+      <form action="">
+        <div class="close-filter-btn">
+          <img src="./images/close-fitler.png" alt="" />
+        </div>
+        <div class="upper-inputs">
+          <label for="label"> By item title </label>
+          <input type="text" placeholder="label" id="title-input" />
+        </div>
+        <div class="middle-inputs">
+          <label for="choose"> By Artist </label>
+          <select name="choose" id="choose-artist-visit-list">
+            <option selected="" value="" disabled="">Choose</option>
+          </select>
+        </div>
+        <span class="by-price">By Price </span>
+        <div class="price-inputs">
+          <div class="min-price">
+            <label class="min">Min:</label>
+            <input type="number" name="" id="min" placeholder="min" />
+          </div>
+          <div class="max-price">
+            <label class="max">Max:</label>
+            <input type="number" name="" id="max" placeholder="max" />
+          </div>
+        </div>
+        <div class="footer-selection">
+          <label for="type"> By Type </label>
+          <select name="choose" id="item-types">
+            <option selected="" value="" disabled="">Choose</option>
+          </select>
+        </div>
+        <div class="check-btn">
+          <img src="./images/check-button.png" alt="" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Artists Home Page starts from here! --- ARTIST HOME PAGE -->
+    <div class="artist-navBar">
+      <div class="logo-visitor artist-logo">
+        <img src="./images/main-logo.png" alt="" />
+      </div>
+      <div class="hamburger-menu">
+        <ul class="ham-menu">
+          <li class="home">Home</li>
+          <li class="items-artist">Items</li>
+          <li class="auction">Auction</li>
+        </ul>
+      </div>
+      <div class="ham-img">
+        <div class="logo-text artist-hamb"></div>
+        <img src="./images/ham-menu.png" alt="" />
+      </div>
+    </div>
+    <div id="artist-homePage">
+      <div class="first-section-artist">
+        <div class="left-box box">
+          <span class="title">Total Items Sold</span>
+          <div class="itemsbyartists">
+            <span class="items-sold sold-Items">  </span>
+            <span class="forward-slash">/</span>
+            <span class="total-items"></span>
+          </div>
+        </div>
+        <div class="right-box box">
+          <span class="title">Total Income</span>
+          <span class="items-sold income">  </span>
+        </div>
+        <div class="down-box">
+          <p>Live Auctioning Item</p>
+          <span class="money"></span>
+          <span class="bid"></span>
+        </div>
+      </div>
+      <div class="chart-section">
+        <div class="text-chart">
+          <p class="income" id="currentBidValue"">Display My Income for last</p>
+        </div>
+        <div class="buttons-charts">
+          <span  class="seven-days">7 days</span>
+          <span  class="fourteen-days">14 days</span>
+          <span  class="thirty-days">30 days</span>
+        </div>
+        <div class="chart-table">
+          <div class="chart-container">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Here starts Items Page  ---- ITEMS PAGE -->
+    <div id="artist-items-page">
+      <div class="add-new-item">
+        <div class="new-item" id="addNewItemButton">
+          <h3>+ Add new item</h3>
+        </div>
+      </div>
+      <div class="form-item" id="newItemForm">
+        <div class="first-section">
+          <h3>Add new item</h3>
+          <label for="isPublished"
+            >is published
+            <input
+              id="isPublished"
+              class="defaultColors"
+              type="checkbox"
+              checked="checked" />
+            <span id="checkMark" class="checkmark"></span
+          ></label>
+        </div>
+        <form action="" id="artistForm">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+          <label for="description">Description</label>
+          <textarea
+            name="textarea"
+            id="description"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <div class="price-type">
+            <label for="type">Type</label>
+            <select name="choose" id="item-types-artist">
+              <option selected="" value="" disabled="">Choose</option>
+            </select>
+            <label for="price">Price</label>
+            <input type="number" id="price" />
+          </div>
+          <label for="image">Image URL</label>
+          <input type="url" id="image" src="" />
+          <label for="or">or</label>
+          <div class="snapshot">
+            <img src="./images/fa-solid_camera.png" class="camera-icon" alt="" />
+            <p>Take a snapshot</p>
+          </div>
+          <div class="footer-buttons">
+            <button id="saveNewItem"></button>
+            <button id="cancelNewItem">Cancel</button>
+          </div>
+        </form>
+      </div>
+      <!-- This will be used to display the added items dynamically -->
+      <div class="delete-modal">
+        <div class="text"><h3>Are you sure you want to delete the card?</h3></div>
+        <div class="buttons">
+          <button id="cancel-card">Cancel</button>
+          <button id="delete-card">Delete</button>
+        </div>
+      </div>
+      <div class="artists-cards"></div>
+    </div>
+    <div class="snap-shot" id="artist-snap-shot">
+      <h3>Artist snapshot page</h3>    
+        <video id="liveStream" autoplay></video>
+        <canvas id="captureStream"></canvas>
+        <img id="capturedImage">
+        <img src="./images/fa-solid_camera.png" alt=""  id="captureImageButton" />
+   </div>
+    <div class="auction-page" id="auctionPage">
+      <div class="auction-section"><h1>Currently there's no item on auction,please check out the artist items page</h1></div>
+      <div class="auction-buttons">
+        <span class="start-counting">Start</span>
+        <span class="start-bidding">Bid</span>
+      </div>
+      <input type="number" id="moneyBid">
+      <div class="moneyApeared">
+        &dollar; 0
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="../script_files/script-js/main.js"></script> -->
+    <script
+      defer
+      type="module"
+      src="./landing_page.js"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./visit_home_page.js"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./visit_listing_page.js"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./artist_items_page.js"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./artist_home_page.js"
+    ></script>
+    <script defer type="module" src="./artistSnapShot.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+.visitor-first-page {
+  display: none;
+}
+.first-section-visitor {
+  font-family: roboto;
+  padding-top: 10px;
+  background-color: #fcebd5;
+  z-index: 1;
+}
+.background-bricks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("./images/Bricks.png") no-repeat center center;
+  background-size: cover;
+  padding: 0 20px;
+}
+
+.main-title h1 {
+  color: #a16a5e;
+  padding: 30px 5px;
+}
+
+#find-btn {
+  width: 120px;
+  height: 30px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #a16a5e;
+  color: #fcebd5;
+}
+
+ .second-section-visitor {
+  background-color: #edd5bb;
+  padding: 20px 0px;
+  height: 430px;
+}
+
+
+
+
+.parent-Carousel {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  height: 352px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rowZ {
+  white-space: nowrap;
+  position: absolute;
+}
+
+.row1 {
+  top: 0;
+}
+
+.row2 {
+  bottom: 0;
+}
+
+.row1 img,
+.row2 img {
+  width: 30vh;
+  height: 15vh;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: -2px -1px 31px -8px rgba(0,0,0,0.75);
+  object-fit: cover;
+}
+
+.third-section-visitor {
+  margin: 20px 0px;
+}
+
+.left-side {
+  margin: 15px 0px;
+  border: none !important;
+  background: none !important;
+  justify-content: center;
+  align-items: center;
+  background-color: #e09686 !important;
+  color: white;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+}
+.left-side img {
+  width: 65px;
+  border-radius: 50px;
+  height: 66px;
+  position: absolute;
+  top: -10%;
+  left: 18%;
+  border: 2px solid #a16a5e;
+}
+.carousel-text {
+  width: 200px;
+  border-left: 1px solid #a16a5e;
+  text-align: center;
+  color: #a16a5e;
+  margin: 10px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-text p {
+  padding-left: 10px;
+}
+.middle-border {
+  border-right: 1px solid #a16a5e;
+  height: 250px;
+  padding: 10px 0px;
+}
+
+.carousel-inner .active {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 35px auto;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.carousel-inner .active:hover {
+  cursor: pointer;
+  transform: scale(1.1) translate(0px, -6px);
+}
+.btn-arrow {
+  width: 5% !important;
+  opacity: 1 !important;
+}
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-row {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.slider-img {
+  flex: 0 0 calc(25% - 10px); 
+  margin-right: 10px; 
+}
+
+.left-slide {
+  transform: translateX(100%) !important;
+}
+
+.right-slide {
+  transform: translateX(-100%) !important;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carouselinner {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.carouselimg {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}

@@ -1,0 +1,183 @@
+#artist-items-page {
+  background-color: #edd5bb;
+  margin-top: 20px;
+  display: none;
+}
+
+.add-new-item {
+  text-align: center;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcebd5;
+  cursor: pointer;
+}
+
+.new-item {
+  color: #a16a5e;
+  width: 90%;
+  padding: 20px;
+  border: 2px dashed #a16a5e;
+}
+.in-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.in-div .date {
+  color: #e09686;
+}
+
+.price {
+  width: 60px;
+  height: 25px;
+  border-radius: 2px;
+  background-color: #a16a5e;
+  color: #fcebd5;
+  text-align: center;
+}
+.bg-color-artist-item {
+  background-color: #fcebd5;
+  padding: 15px 15px;
+  color: #a16a5e;
+}
+
+.foot-text {
+  background-color: #a16a5e;
+  font-size: 15px;
+  width: 100%;
+}
+
+.all-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2px;
+  padding: 20px 0px;
+}
+.all-buttons button {
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  padding: 5px;
+  color: #f8f8f8;
+  box-shadow: 0px 1px 1px 0px #00000040;
+}
+.sent-to-auction {
+  background-color: #1b59ac;
+}
+.unpublish {
+  background-color: rgb(27, 172, 111);
+  color: #5a5a5a;
+}
+.publish {
+  background-color: #e5e5e5;
+  color: #5a5a5a;
+}
+#remove {
+  background-color: #d44c2e;
+}
+.edit {
+  background-color: #fcebd5;
+  color: #a16a5e !important;
+}
+#artistForm input,
+textarea {
+  color: #fcebd5;
+}
+
+#item-types-artist {
+  background-color: #a16a5e;
+  color: #fcebd5;
+}
+.first-section input:checked ~ .checkMark .defaultColors {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+#isPublished {
+  position: absolute;
+  cursor: pointer;
+  right: 9px;
+}
+#checkMark {
+  position: absolute;
+  top: 104px;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #edd5bb;
+  border-radius: 30%;
+}
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkmark.active::after {
+  display: block;
+}
+.first-section #checkMark::after {
+  left: 9px;
+  top: 0px;
+  width: 8px;
+  height: 23px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  color: #a16a5e;
+}
+
+.delete-modal {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  background-color: #a16a5e;
+  color: #fcebd5;
+  font-size: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: -100%; /* Initial position above the viewport */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.3s ease-in-out;
+}
+
+.delete-modal .buttons button {
+  border-radius: 5px;
+  border: none;
+}
+.delete-modal .buttons #cancel-card {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+.delete-modal .buttons #delete-card {
+  background-color: #f80000;
+  color: #ffffff;
+}
+
+.snap-shot {
+  background-color: #a16a5e;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fcebd5 ;
+}
+.snap-shot canvas{
+  display: none;
+}
+.snap-shot video {
+  box-shadow: 0px 6px 6px 0px #00000040;
+width: 378px;
+height: 657px;
+}
+
+#captureImageButton {
+  cursor: pointer;
+}
+

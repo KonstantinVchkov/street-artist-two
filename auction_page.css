@@ -1,0 +1,39 @@
+#auctionPage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: inherit;
+    background-color: #A16A5E;
+    color: #fcebd5;
+    height: 91vh;
+}
+
+.counter {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 30px;
+}
+.auction-buttons {
+    display: flex;
+}
+.start-counting,.start-bidding{
+    background-color: #FCEBD5;
+    width: 160px;
+    display: flex;
+    height: 50px;
+    color: #A16A5E;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+#moneyBid {
+    background-color: inherit;
+    border: 3px solid #FCEBD5;
+    color: #FCEBD5;
+    margin: 10px 0px;
+}
